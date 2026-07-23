@@ -14,7 +14,7 @@ public class MyopiaClient implements ClientModInitializer {
     public static final String MOD_ID = "Myopia";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    // Use Identifier.fromNamespaceAndPath in MC 26.1+
+    // Use Identifier.fromNamespaceAndPath in MC 26.1.2
     public static final KeyMapping.Category MYOPIA_CATEGORY = KeyMapping.Category.register(
             Identifier.fromNamespaceAndPath("myopia", "main")
     );
@@ -26,7 +26,7 @@ public class MyopiaClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        LOGGER.info("Making Minecraft look Bad™ since 2024!");
+        LOGGER.info("Making Minecraft anti-myopic since 2026!");
 
         toggleKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 KEY_TOGGLE_MYOPIA, // Translation key for the keybind name
